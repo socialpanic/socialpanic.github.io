@@ -1,0 +1,220 @@
+* { margin: 0; padding: 0; }
+<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+input[type="text"]{ 
+    padding: 5px;    
+    border: 1px solid #DDDDDD; 
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);     
+    background: -webkit-gradient(linear, left top, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF)); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF'); 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    -moz-box-shadow: 0 0 2px #DDDDDD; 
+    -webkit-box-shadow: 0 0 2px #DDDDDD; 
+    box-shadow: 0 0 2px #DDDDDD; 
+} 
+input[type="text"]:hover 
+{ 
+    border:1px solid #cccccc; 
+} 
+input[type="text"]:focus 
+{ 
+    box-shadow:0 0 2px #FFFE00; 
+} 
+
+#navlist li{
+	display: inline;
+	text-align: right;
+	list-style-type: none;
+	font-style: bold;
+	padding-right: 5px;
+}
+
+#navlist2 li{
+	text-align: left;
+	display: inline;
+	list-style-type: none;
+	font-style: bold;
+	padding-right: 10px;
+	font-family: 'Rammetto One', cursive;
+	font-size: 20px;
+}
+
+#navlist2 a:link{
+	color: #ffffff;
+}
+
+#navlist2 a:visited{
+	color: #ffffff;
+}
+
+#head1 {
+	float: left;
+	height: 5%;
+	text-align: left;
+	width: 85%;
+	color: white;
+	background-color: 003F87;
+}
+
+#head2 {
+	float: right;
+	height: 5%;
+	text-align: right;
+	width: 15%;
+	color: white;
+	background-color: 003F87;
+}
+
+#header {
+	float: right;
+	clear: all;
+	height:5%;
+	text-align: right;
+	position: fixed;
+	width: 100%;
+	color: white;
+	background-color: 003F87;
+}
+
+#banner {	
+	width: 100%;
+	height: 25%;
+	padding-right:25%;
+	background-color: lightgray;
+}
+
+
+#left {
+	
+	float: left;
+	position: 50%;
+	width: 100%;
+	color: 003F87;
+	margin: auto;
+}
+
+#news {
+	padding: 5px;
+	padding-left: 25%;
+	text-align: left;
+	float: left;
+	background-color: white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+
+#projects {
+	color: white;
+	padding: 5px;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: right;
+	float: left;
+	background-color: 003F87;
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+
+#resume {
+	padding: 5px;
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: left;
+	float: left;
+	color: black;
+	background-color: lightgray;
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	width: 70%;
+}
+
+#media {
+	color: white;
+	background-color: 003F87;
+	padding: 5px;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: right;
+	float: left;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+
+#about {
+	padding: 5px;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: right;
+	color: black;
+	float: left;
+	background-color: lightgray;
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+#contact {
+	text-align: center;
+	padding: 5px;
+	padding-left: 25%;
+	float: left;
+	background-color: white;
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+#media .img{
+	height: 50%:;
+	width: 50%;
+}
+#mepic {
+	position: fixed;
+}
+#main1 {
+	clear: all;
+	float: top;	
+	float: left;
+	background-color: white;
+	width: 43%;
+	height: 100%;
+	color: black;
+}
+
+#fadein {
+    position:relative;
+    height:320px;
+    width:320px;
+}
+
+#fadein img {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#main2 {
+	
+	text-align: center;
+	font-family: Georgia;
+	font-size: 20px;
+	clear: all;
+	float: top;
+	float: right;
+	background-color: lightgray;
+	width: 57%;
+	height: 100%;
+	color: black;
+}
+
+#skills {	
+	text-align: center;
+	float: left;
+	background-color: lightgray;
+	width: 33%;
+	height: 50%;
+	color: black;
+}

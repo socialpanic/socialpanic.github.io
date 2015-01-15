@@ -1,0 +1,168 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"><link href='http://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"><link href='http://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+	<script src="https://dl.dropboxusercontent.com/u/15967585/website/jquery-scrollto/vendor/jquery.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/15967585/website//jquery-scrollto/lib/jquery-scrollto.js"></script>
+	<!--<script src="./jquery-scrollto/vendor/jquery.js"></script>-->
+	<!--<script src="./jquery-scrollto/lib/jquery-scrollto.js"></script>-->
+	<style>
+a:li:link {background-color:#000000;}    /* unvisited link */
+a:li:visited {background-color:#000000;} /* visited link */
+a:li:hover {background-color:#000000;}   /* mouse over link */
+a:li:active {background-color:#000000;}  /* selected link */
+
+</style>
+
+<script>
+		var slideimages=new Array()
+		var slidelinks=new Array()
+		function slideshowimages(){
+			for (i=0;i<slideshowimages.arguments.length;i++){
+				slideimages[i]=new Image()
+				slideimages[i].src=slideshowimages.arguments[i]
+			}
+		}
+		function slideshowlinks(){
+			for (i=0;i<slideshowlinks.arguments.length;i++)
+				slidelinks[i]=slideshowlinks.arguments[i]
+			}
+			function gotoshow(){
+				if (!window.winslide||winslide.closed)
+					winslide=window.open(slidelinks[whichlink])
+				else
+					winslide.location=slidelinks[whichlink]
+					winslide.focus()
+				}
+				</script>
+
+
+<title>Mitchell Adams Portfolio</title>
+</head>
+<body>
+	
+	<div id = 'header'>
+		<div id = 'head1'>
+			<div id = "navlist2">
+				<li><a id = "menu" href="#main1"><b style="color:gold;">MIT</b>chell <b><b style="color:gold;">RY</b>an <b><b style="color:gold;">AD</b>ams</b></a></li>
+				<li><a id = "menu" href="#projects">projects</a></li>
+				<li><a id = "menu" href="#resume">resume</a></li>
+				<li><a id = "menu" href="#media">media</a></li>
+				<li><a id = "menu" href="#about">about</a></li>
+				<li><a id = "menu" href="#contact">contact</a></li>
+				<li><a id = "menu" href="rpsls/index.htm">RPSLS</a></li>
+			</div>
+		</div>
+		<div id="head2"></div>
+
+			<ul id="navlist">				
+				<li><a href="https://plus.google.com/117426670550468981245/about" target="blank"><img src="plus.png" style="float: right"height="35" width="35"></a></li>
+				<li><a href="https://github.com/socialpanic" target="blank"><img src="git.png" style="float: right"height="35" width="35"></a></li>
+				<li><a href="https://www.facebook.com/socialpanic" target="blank"><img src="face.png" style="float: right"height="35" width="35"></a></li>
+				<li><a href="https://twitter.com/mitryad" target="blank"><img src="tweet.png" style="float: right"height="35" width="35"></a></li>
+				<li><a href="https://www.linkedin.com/pub/mitchell-adams/26/bb0/103/" target="blank"><img src="in.gif" style="float: right"height="35" width="35"></a></li>
+				<li><a href="http://www.citizen27.com" target="blank"><img src="blog.png" style="float: right"height="35" width="35"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id = 'main1'>
+		 <img src = 'me2.jpg' height='100%' width='100%'>
+
+
+	</div>
+	<div id = 'main2'>
+		
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>	
+		<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mitryad" data-widget-id="404778196530257920">Tweets by @mitryad</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	<div id = 'left'>		
+		<div id = 'projects'>
+			<p><h1>My Home IT LAB</h1></p>
+			 <p>In order to satisfy the requirements of the capstone requirement at WVUP, I purchased and configured my own home IT lab. The finished project is demonstrated briefly in the video below but has since grown to include six routers, two physical hosts with over five virtual instances between them. The network itself makes use of concepts from the Cisco Networking Academy Curriculim (VLANS, NAT, Frame-Relay just to name a few). This project is a huge achievement for me as it earned me with my Associates Degree of Applied Science and has allowed for hours of fun since.</p><br>
+			 <center><video width="500" height="400" controls>
+			  <source src="lab.mp4" type="video/mp4">
+			</video></center>
+			 <p><h1>Noobtutor</h1></p>
+			 <p>Noobtutor is a question / answer platform that I am currently working on. The focus is on allowing users (mobile and desktop) to be connected with a network of people that can answer specific questions. More details on the project as it takes shape but expected deployment of beta could happen by May of 2014.</p><br>
+		</div>
+
+		<div id = 'resume'>
+			<div id = 'resume'>
+				<i style="text-align:center"><p><h3><a href = "MadamsResume2014.pdf">PDF Version Here</a></h3></p></i>
+			<p><h1>Mitchell Adams</h1></p>
+	 		<p><h4 style="text-align:center" >Education</h4></p>
+			<p><b>West Virginia University at Parkersburg</b> <i style="float: right">2012</i><br>
+			<i><u>A.A.S., Associates of Applied Science, Computer & Information Technology</i></u><br>
+			<b>West Virginia University at Parkersburg</b> <i style="float: right">Expected 2014</i><br>
+			<i><u>B.A.T., Bachelor of Applied Technology, Software Engineering & Information Security Double Major</i></u>
+			<p><h4 style="text-align:center">Qualifications</h4></p>
+			<p><b>Operating Systems:</b> Windows 9x, 2000, XP, Vista, 7, 8, Server 2008, Ubuntu Linux, Fedora Linux, and CentOS 6<br>
+			<b>Languages:</b> C, C++, C#, Python, Java, HTML, CSS, PHP<br>
+			<b>Technologies:</b> Cisco Router and Switch configuration, Repair and troubleshooting of peripheral devices.<br>
+			<b>Software:</b> Visual Studio, Eclipse, NetBeans, Access Data FTK, MySQL, Git Version Control<br>
+			<p><h4 style="text-align:center">Employment</h4><p>
+			<p><b>Maintenance Associate</b> <i style="float: right">2008 - Present</i><br>
+			<u><i>Walmart Stores</u></i> - I was active in routine maintenance and preventive maintenance procedures to keep facility clean and safe for customers and associates and worked efficiently in a team or independently to complete tasks in a timely manner.<br>
+			<b>Tutor </b> <i style="float: right"> 2012 - 2013 </i><br>
+			<u><i>West Virginia Univeristy at Parkersburg</u></i> - Worked with the schedules of other students to provide one-on-one and group study sessions for areas of study related to computer science, information technology, and business technology.<br>
+			<b>Tech Support</b> <i style="float: right">2007 - 2008</i><br>
+			<u><i>West Virginia Univeristy at Parkersburg</u></i> - Tier 1 tech support to assist the IT department, tasks included answering phones, resetting passwords, performing routine updates and providing technical support to both faculty and students with hardware and software issues.<br>
+			<b>Software Engineer (Intern)</b> <i style="float: right">2007 - 2008</i><br>
+			<u><i>nChannel</u></i> - I developed code that interfaced with various e-commerce API to integrate items, orders, and customer data into nChannel. Through assigned tasks I gained firsthand knowledge of source control through TFS and Microsoft Visual Studio as well as the agile software development life-cycle. Participated in the documentation of new code via the developer wiki and took notes during demonstrations and meetings.</p>
+			<p><h4 style="text-align:center">Projects</h4></p>
+			<b>Noobtutor</b><br>
+			An interactive Q&A site with a user experience focused on mobile web and devices. It uses python flask framework and MySQL backend for database. Hosting provided by www.pythonanywhere.com. Currently in development</p>
+			<br>
+			<i style="text-align:center"><p><h3><a href = "MadamsResume2014.pdf">PDF Version Here</a></h3></p></i>
+		</div>
+		</div>
+		<div id = 'media'>
+			<h1> Pictures and Things</h1>
+			 <center><a href="javascript:gotoshow()"><img src="med1.jpg" name="slide" height="75%" width="75%"</a></center>
+			<script>
+				    slideshowimages("med1.jpg", "med2.jpg", "med3.jpg", "med4.jpg", "med5.jpg", "med6.jpg")
+				    var slideshowspeed = 4000
+				    var whichlink = 0
+				    var whichimage = 0
+				    function slideit() {
+				        if (!document.images)
+				            return
+				        document.images.slide.src = slideimages[whichimage].src
+				        whichlink = whichimage
+				        if (whichimage < slideimages.length - 1)
+				            whichimage++
+				        else
+				            whichimage = 0
+				        setTimeout("slideit()", slideshowspeed)
+				    }
+				    slideit()
+			</script>
+		</div>
+
+		
+		<div id = "about">
+			<h1>About Myself</h1><br><br>
+			<p><img src="me.jpg" align="left">My name is Mitchell Adams and I am a student at <a href = "www.wvup.edu">West Virginia University at Parkersburg</a> studying Software Enginering and Information Security and hold the A+ and Network+ certifications. I get a genuine satisfaction from learning new skills and developing existing ones. I enjoy history, writing code, and xbox. My current fasination is with "Big Data" and how we will scale our infomration systems and databases to accomodate the exponential growth of data that our social media and expanding mobile networks is generating. I am also a networking enthusiest and am working towards my CCNA. When I am not dorking around with code or routers I like spending time with my wonderful wife Nikki who has been incredibly supportive of me in everything I do.</p><br>
+
+			<p>I am cuurently working as an intern in a development capacity at the Columbus-based startup <a href='www.nchennel.com'>nChannel</a> where I work on multi-channel integrations solutions. After I graduate next Spring I hope to make a fulltime thing of it while I pursue a Masters degree on the side.</p>
+
+			<p>email: <a href="mailto:madams5@wvup.edu">madams5@wvup.edu</a></p>
+			
+		</div>
+
+		<div id = 'contact'>
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

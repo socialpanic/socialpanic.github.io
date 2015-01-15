@@ -1,0 +1,180 @@
+
+<html>
+<head>
+    <title></title>
+    <link rel = "stylesheet" type="text/css" href="stylesheet2.css">
+    <script>
+     var wins = 0, losses = 0, draws = 0;
+    function score(call) 
+    {
+               
+        var winEl = document.getElementById("win"),
+            loseEl = document.getElementById("lose"),
+            drawEl = document.getElementById("draw");
+   
+        if (call === "draw") {
+            draws++;
+            drawEl.innerHTML = draws;
+        }
+       
+        if (call === "win") {
+            wins++;
+            winEl.innerHTML = wins;
+        }
+       
+        if (call === "lose") {
+            losses++;
+            loseEl.innerHTML = losses;
+        }
+    }
+
+    function play(choice, player)
+    {
+        var choice = choice;
+        var weapons = ['ROCK', 'PAPER', 'SCISSORS', 'LIZARD', 'SPOCK'];    
+        var computer = weapons[Math.floor(Math.random()*weapons.length)]; 
+        computer = computer.toString();
+
+        if (choice === computer)
+        {
+            alert(player+" chooses "+choice+" and computer chooses "+computer+"\n DRAW!!!");
+            alert("I refuse to believe we are evenly matched");
+            score('draw');
+        }
+
+        else
+        {
+            if (choice === 'ROCK') 
+        { 
+            if (computer == 'PAPER' || computer == 'SPOCK') 
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for The Computer");
+                alert("BAZINGA PUNK!!!!!")
+                score('lose');
+            } 
+              
+            else
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for the Player");
+                alert("You are the superior being :(")
+                score('win');
+            } 
+        } 
+          
+        if (choice === 'PAPER') 
+        { 
+            if (computer == 'SCISSIORS' || computer == 'LIZARD') 
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for The Computer");
+                alert("BAZINGA PUNK!!!!!")
+                score('lose');
+            } 
+              
+            else
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for the Player");
+                alert("You are the superior being :(")
+                score('win');
+            } 
+        } 
+          
+        if (choice === 'SCISSORS') 
+        { 
+            if (computer == 'ROCK' || computer == 'SPOCK') 
+            { 
+                 alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for The Computer");
+                alert("BAZINGA PUNK!!!!!")
+                score('lose');
+            } 
+              
+            else
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for the Player");
+                alert("You are the superior being :(")
+                score('win');
+            } 
+        } 
+          
+        if (choice === 'LIZARD') 
+        { 
+            if (computer == 'ROCK' || computer == 'SCISSORS') 
+            { 
+                 alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for The Computer");
+                alert("BAZINGA PUNK!!!!!")
+                score('lose');
+            } 
+              
+            else
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for the Player");
+                alert("You are the superior being :(")
+                score('win');
+            } 
+        } 
+          
+        if (choice === 'SPOCK') 
+        { 
+            if (computer == 'PAPER' || computer == 'LIZARD') 
+            { 
+                 alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for The Computer");
+                alert("BAZINGA PUNK!!!!!")
+                score('lose');
+            } 
+              
+            else
+            { 
+                alert(player+" chooses "+choice+" and computer chooses "+computer+"\n One point for the Player");
+                alert("You are the superior being :(")
+                score('win');
+            } 
+        }
+
+        }
+          
+        
+    }
+    </script>
+</head>
+
+<body>
+
+
+    <div class="BODY">
+        <h1>SCHOOL IS OUT. TIME FOR GAMES AND BAD KUNG FU MOVIES.</h1>
+        <h1>HAVE A GOOD BREAK AARON</h1>
+        <h2>Rules</h2>
+        <div id = 'section'>
+            <h3>Okay, the rules are; Scissors cut paper, Paper covers rock, Rock crushes lizard, Lizard poisons Spock, Spock smashes (or melts) scissors, Scissors decapitate lizard, Lizard eats paper, Paper disproves Spock, Spock vaporizes rock, Rock breaks scissors</h3>
+        </div>
+        <h2>Score</h2>
+        <div id = 'section'>
+            <ul id="scoreBoard">
+                <li>
+                    <h3>Wins: <span id="win">0</span></h3>
+                </li>
+                <li>
+                    <h3>Losses: <span id="lose">0</span></h3>
+                </li>
+                <li>
+                    <h3>Draws: <span id="draw">0</span></h3>
+                </li>
+            </ul>
+        </div>
+        <h2>Click Your Weapon</h2>
+        <div id = 'section'>
+            <ul id="navlist">
+            <li><input type="image" src="rock.png" onclick="play('ROCK',player)"</li>
+            <li><input type="image" src="paper.png" onclick="play('PAPER',player)"</li>
+            <li><input type="image" src="scissors.png" onclick="play('SCISSORS',player)"</li>
+            <li><input type="image" src="lizard.png" onclick="play('LIZARD',player)"</li>
+            <li><input type="image" src="spock.png" onclick="play('SPOCK',player)"</li>
+            </ul>
+
+    </div>
+
+</body>
+<script>
+    var player = prompt("What is your name?");
+    alert("Alright " +player+ " prepair yourself for total annihilation.\n");
+    </script>
+</html>
